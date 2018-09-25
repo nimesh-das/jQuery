@@ -5,12 +5,16 @@
 
 <script>
  $(document).ready(function() {
- 	$("p").click(function() {
- 		$(this).hide();
+ 	$("input").focus(function() {
+ 		$(this).css("background-color", "#cccccc");
+ 	});
+ 	$("input").blur(function() {
+ 		$(this).css("background-color", "#ffffff");
  	});
  });
 </script>
 
-<p> What's up </p>
+Name: <input type="text" name="fullname"> 
+Email: <input type="text" name="email">
 
 </html>
