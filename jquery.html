@@ -5,16 +5,26 @@
 
 <script>
  $(document).ready(function() {
- 	$("input").focus(function() {
- 		$(this).css("background-color", "#cccccc");
- 	});
- 	$("input").blur(function() {
- 		$(this).css("background-color", "#ffffff");
+ 	$("#word").click(function() {
+ 		$("#div1").fadeIn();
+ 		$("#div2").fadeIn("slow");
+ 		$("#div3").fadeIn("10000")
  	});
  });
 </script>
 
-Name: <input type="text" name="fullname"> 
-Email: <input type="text" name="email">
+<div id="word"> word </div>
+
+<div id="div1"
+style="width:50px; height:50px; display:none; background-color: pink;">
+</div>
+
+<div id="div2"
+style="width:50px; height:50px; display:none; background-color: maroon;">
+</div>
+
+<div id="div3"
+style="width:50px; height:50px; display:none; background-color: yellow;">
+</div>
 
 </html>
